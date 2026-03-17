@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Centro Cuídate · Nutrición & Presoterapia en Coín</title>
-  <meta name="description" content="Centro Cuídate Coín – Asesoramiento nutricional personalizado y presoterapia profesional. Primera sesión de presoterapia GRATIS con tu evaluación. ☎ 687 86 40 34"/>
-  <meta name="keywords" content="presoterapia coín, nutrición coín, control peso coín, drenaje linfático coín, celulitis coín, bienestar coín málaga"/>
-  <meta property="og:title" content="Centro Cuídate · Nutrición & Presoterapia en Coín"/>
-  <meta property="og:description" content="Asesoramiento nutricional personalizado y presoterapia en Coín. Primera sesión de presoterapia de regalo con tu evaluación."/>
+  <title>Centro Cuídate · Bienestar Integral en Coín</title>
+  <meta name="description" content="Centro Cuídate Coín – Nutrición personalizada, Presoterapia, Skincare Coreano, Ritual 3D y más. Mari Leiva · C/Arquímedes, 32 · ☎ 687 864 034"/>
+  <meta name="keywords" content="presoterapia coín, nutrición coín, skincare coreano coín, ritual facial coín, termoterapia coín, bienestar coín málaga, ritual 3D coín"/>
+  <meta property="og:title" content="Centro Cuídate · Bienestar Integral en Coín"/>
+  <meta property="og:description" content="Nutrición, Presoterapia, Skincare Coreano y más en Coín. Combo Belleza desde 39€. Mari Leiva · C/Arquímedes, 32"/>
   <meta property="og:type" content="website"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Centro Cuídate","telephone":"+34687864034","address":{"@type":"PostalAddress","addressLocality":"Coín","addressRegion":"Málaga","addressCountry":"ES"},"description":"Asesoramiento nutricional personalizado y presoterapia en Coín, Málaga."}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Centro Cuídate - Bienestar Integral","telephone":"+34687864034","address":{"@type":"PostalAddress","streetAddress":"C/Arquímedes, 32","addressLocality":"Coín","addressRegion":"Málaga","addressCountry":"ES"},"description":"Centro de bienestar integral en Coín. Nutrición personalizada, Presoterapia, Skincare Coreano, Ritual 3D. Mari Leiva."}</script>
   <style>
     :root{
       --ivory:#FEFCF7;--cream:#F5EDD8;--sand:#E8D5B7;
@@ -28,7 +28,9 @@
     /* NAV */
     nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1.4rem 4rem;transition:all .5s ease;}
     nav.solid{background:rgba(30,18,16,.93);backdrop-filter:blur(18px);padding:1rem 4rem;box-shadow:0 1px 0 rgba(201,169,110,.12);}
-    .nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:400;color:var(--ivory);text-decoration:none;letter-spacing:.05em;}
+    .nav-logo{display:flex;align-items:center;gap:.7rem;font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:400;color:var(--ivory);text-decoration:none;letter-spacing:.05em;}
+    .nav-logo img{height:40px;width:auto;border-radius:50%;transition:height .3s}
+    nav.solid .nav-logo img{height:32px}
     .nav-logo span{color:var(--champ);font-style:italic}
     .nav-right{display:flex;align-items:center;gap:2rem}
     .nav-tel{font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.45);text-decoration:none;transition:color .2s;}
@@ -207,6 +209,61 @@
     .foot-links a:hover{color:var(--champ)}
     .foot-copy{font-size:.68rem;color:rgba(254,252,247,.12);border-top:1px solid rgba(255,255,255,.04);padding-top:1.2rem;margin-top:.8rem}
 
+    /* SKINCARE SECTION */
+    .skincare{padding:7rem 0;background:var(--ivory);overflow:hidden}
+    .skincare-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+    @media(max-width:800px){.skincare-grid{grid-template-columns:1fr;gap:2.5rem}}
+    .skincare-img{border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.12)}
+    .skincare-img img{width:100%;height:auto;display:block}
+    .skincare-benefits{list-style:none;display:flex;flex-direction:column;gap:1rem;margin:1.8rem 0}
+    .skincare-benefits li{display:flex;align-items:center;gap:.9rem;font-size:.92rem;color:var(--mocha-m);line-height:1.6;padding:.7rem 1rem;background:linear-gradient(135deg,rgba(201,169,110,.06),rgba(232,213,183,.12));border-radius:8px;border-left:3px solid var(--champ)}
+    .skincare-price{display:inline-flex;align-items:baseline;gap:.4rem;margin-top:1.2rem;padding:1rem 1.6rem;background:linear-gradient(135deg,var(--mocha),var(--mocha-m));border-radius:8px;color:var(--ivory)}
+    .skincare-price .price-num{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:600;color:var(--champ)}
+    .skincare-price .price-unit{font-size:.85rem;color:rgba(254,252,247,.6)}
+
+    /* COMBO & RITUAL 3D */
+    .promos{padding:7rem 0;background:var(--white)}
+    .promos-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-top:3rem}
+    @media(max-width:800px){.promos-grid{grid-template-columns:1fr}}
+    .promo-card{border-radius:16px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.1);transition:transform .3s,box-shadow .3s;position:relative}
+    .promo-card:hover{transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,0,0,.18)}
+    .promo-card img{width:100%;height:auto;display:block}
+    .promo-overlay{position:absolute;bottom:0;left:0;right:0;padding:1.5rem;background:linear-gradient(transparent,rgba(30,18,16,.85));display:flex;justify-content:flex-end}
+    .promo-overlay .btn-primary{font-size:.68rem;padding:.7rem 1.4rem}
+
+    /* BONOS */
+    .bonos{padding:7rem 0;background:var(--mocha);position:relative;overflow:hidden}
+    .bonos::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(201,169,110,.06),transparent 50%);pointer-events:none}
+    .bonos-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-top:3rem}
+    @media(max-width:800px){.bonos-grid{grid-template-columns:1fr}}
+    .bono-card{border-radius:16px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.3);transition:transform .3s}
+    .bono-card:hover{transform:translateY(-4px)}
+    .bono-card img{width:100%;height:auto;display:block}
+
+    /* HERO IMAGE */
+    .hero-logo-img{width:min(280px,60vw);height:auto;filter:drop-shadow(0 8px 32px rgba(0,0,0,.3));animation:fadeUp .8s .3s both}
+
+    /* PARALLAX DIVIDER */
+    .parallax-divider{position:relative;height:45vh;min-height:320px;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center}
+    .parallax-bg{position:absolute;inset:-20%;background-image:url('img/logo-variantes.jpeg');background-size:cover;background-position:center;background-attachment:fixed;filter:brightness(.35);z-index:0}
+    @supports (-webkit-touch-callout:none){.parallax-bg{background-attachment:scroll}}
+    .parallax-content{position:relative;z-index:1;padding:2rem}
+    .parallax-content h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.8rem);font-weight:300;color:var(--ivory);line-height:1.2;margin-bottom:.8rem;text-shadow:0 2px 20px rgba(0,0,0,.5)}
+    .parallax-content h2 em{font-style:italic;color:var(--champ)}
+    .parallax-content p{font-size:.95rem;color:rgba(254,252,247,.55);max-width:500px;margin:0 auto;line-height:1.7;text-shadow:0 1px 8px rgba(0,0,0,.4)}
+
+    /* ABOUT / MARI LEIVA */
+    .about{padding:5rem 0;background:var(--cream);text-align:center}
+    .about-name{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--mocha);font-weight:400;margin-bottom:.5rem}
+    .about-role{font-size:.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+    .about-address{font-size:.95rem;color:var(--mocha-l);line-height:1.8}
+
+    /* SERVICES 5-COL */
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--sand)}
+    .services-grid-5{grid-template-columns:repeat(5,1fr)}
+    @media(max-width:900px){.services-grid-5{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:600px){.services-grid-5{grid-template-columns:1fr}}
+
     /* WA FLOAT */
     .wa-float{position:fixed;bottom:1.8rem;right:1.8rem;z-index:300;width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,#25D366,#128C7E);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 28px rgba(37,211,102,.45);text-decoration:none;transition:transform .25s;animation:fadeUp .8s .5s both;}
     .wa-float::before{content:'';position:absolute;inset:-6px;border-radius:50%;border:1px solid rgba(37,211,102,.28);animation:ringPulse 2.5s ease-in-out infinite;}
@@ -214,16 +271,16 @@
     .wa-float svg{width:25px;height:25px;fill:#fff}
     @keyframes ringPulse{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:0;transform:scale(1.55)}}
     @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-    @media(max-width:600px){.container{padding:0 1.2rem}.hero-left{padding:7rem 1.2rem 2.5rem}.hero-right{padding:1.5rem 1.2rem 4rem}.services{padding:5rem 0}.preso-feat{padding:5rem 0 7rem}.stats{padding:4rem 0}.gift{padding:5rem 0}.process{padding:5rem 0}.cta-final{padding:5rem 0}.s-card{padding:2rem 1.4rem}.preso-feat-grid,.cel-grid{gap:2rem}}
+    @media(max-width:600px){.container{padding:0 1.2rem}.hero-left{padding:7rem 1.2rem 2.5rem}.hero-right{padding:1.5rem 1.2rem 4rem}.services{padding:5rem 0}.preso-feat{padding:5rem 0 7rem}.stats{padding:4rem 0}.gift{padding:5rem 0}.process{padding:5rem 0}.cta-final{padding:5rem 0}.s-card{padding:2rem 1.4rem}.preso-feat-grid,.cel-grid{gap:2rem}.skincare{padding:5rem 0}.promos{padding:5rem 0}.bonos{padding:5rem 0}}
   </style>
 </head>
 <body>
 <div id="cursor-glow"></div>
 
 <nav id="nav">
-  <a href="#" class="nav-logo">Centro <span>Cuídate</span></a>
+  <a href="#" class="nav-logo"><img src="img/logo-centro-cuidate.jpeg" alt="Logo Centro Cuídate"/>Centro <span>Cuídate</span></a>
   <div class="nav-right">
-    <a href="tel:+34687864034" class="nav-tel">687 86 40 34</a>
+    <a href="tel:+34687864034" class="nav-tel">687 864 034</a>
     <a href="https://wa.me/34687864034?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20cita%20en%20Centro%20Cu%C3%ADdate" target="_blank" rel="noopener" class="nav-btn">
       <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.118 1.522 5.851L0 24l6.293-1.652A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.011-1.375l-.36-.214-3.733.98.998-3.642-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
       Reservar cita
@@ -233,9 +290,9 @@
 
 <section class="hero" id="inicio">
   <div class="hero-left">
-    <div class="hero-eyebrow">Bienestar · Nutrición · Presoterapia</div>
-    <h1>Tu cuerpo merece<br/><em>el mejor cuidado</em></h1>
-    <p class="hero-sub">Asesoramiento nutricional personalizado y presoterapia profesional en Coín. Resultados reales, acompañamiento real.</p>
+    <div class="hero-eyebrow">Nutrición · Presoterapia · Skincare Coreano</div>
+    <h1>Tu bienestar<br/><em>integral</em></h1>
+    <p class="hero-sub">Nutrición personalizada, Presoterapia con Termoterapia, Skincare Coreano y Ritual 3D. Mari Leiva · C/Arquímedes, 32 · Coín, Málaga.</p>
     <div class="hero-btns">
       <a href="https://wa.me/34687864034?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20cita%20en%20Centro%20Cu%C3%ADdate%20%F0%9F%8C%B8" target="_blank" rel="noopener" class="btn-primary">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.118 1.522 5.851L0 24l6.293-1.652A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.011-1.375l-.36-.214-3.733.98.998-3.642-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
@@ -251,15 +308,11 @@
   </div>
   <div class="hero-right">
     <div style="position:relative;display:inline-block">
-      <div class="hero-pill">Centro en Coín</div>
-      <div class="hero-shape">
-        <div class="shape-orb orb1"></div>
-        <div class="shape-orb orb2"></div>
-        <div class="shape-orb orb3"></div>
-      </div>
+      <div class="hero-pill">C/Arquímedes, 32</div>
+      <img src="img/logo-centro-cuidate.jpeg" alt="Centro Cuídate - Bienestar Integral - Logo" class="hero-logo-img"/>
       <div class="hero-card">
-        <span class="hero-card-label">Oferta de bienvenida</span>
-        <div class="hero-card-text">1ª Sesión de Presoterapia <strong>GRATIS</strong> con tu evaluación nutricional</div>
+        <span class="hero-card-label">Combo Belleza</span>
+        <div class="hero-card-text">Skincare + Presoterapia + Termoterapia por solo <strong>39€</strong></div>
       </div>
     </div>
   </div>
@@ -268,23 +321,23 @@
 <div class="marquee-strip" aria-hidden="true">
   <div class="marquee-track">
     <span>Nutrición Personalizada</span><span class="dot">✦</span>
-    <span>Presoterapia</span><span class="dot">✦</span>
-    <span>Control de Peso</span><span class="dot">✦</span>
+    <span>Presoterapia & Termoterapia</span><span class="dot">✦</span>
+    <span>Skincare Coreano</span><span class="dot">✦</span>
+    <span>Ritual 3D</span><span class="dot">✦</span>
+    <span>Combo Belleza 39€</span><span class="dot">✦</span>
+    <span>Recover 7</span><span class="dot">✦</span>
     <span>Drenaje Linfático</span><span class="dot">✦</span>
-    <span>Bienestar Integral</span><span class="dot">✦</span>
-    <span>Sesión Gratis</span><span class="dot">✦</span>
-    <span>Celulitis</span><span class="dot">✦</span>
-    <span>Seguimiento Continuo</span><span class="dot">✦</span>
     <span>Coín · Málaga</span><span class="dot">✦</span>
+    <span>Mari Leiva</span><span class="dot">✦</span>
     <span>Nutrición Personalizada</span><span class="dot">✦</span>
-    <span>Presoterapia</span><span class="dot">✦</span>
-    <span>Control de Peso</span><span class="dot">✦</span>
+    <span>Presoterapia & Termoterapia</span><span class="dot">✦</span>
+    <span>Skincare Coreano</span><span class="dot">✦</span>
+    <span>Ritual 3D</span><span class="dot">✦</span>
+    <span>Combo Belleza 39€</span><span class="dot">✦</span>
+    <span>Recover 7</span><span class="dot">✦</span>
     <span>Drenaje Linfático</span><span class="dot">✦</span>
-    <span>Bienestar Integral</span><span class="dot">✦</span>
-    <span>Sesión Gratis</span><span class="dot">✦</span>
-    <span>Celulitis</span><span class="dot">✦</span>
-    <span>Seguimiento Continuo</span><span class="dot">✦</span>
     <span>Coín · Málaga</span><span class="dot">✦</span>
+    <span>Mari Leiva</span><span class="dot">✦</span>
   </div>
 </div>
 
@@ -298,30 +351,125 @@
       </div>
       <div class="services-num" aria-hidden="true">01</div>
     </div>
-    <div class="services-grid">
+    <div class="services-grid services-grid-5">
       <div class="s-card reveal" style="transition-delay:.05s">
         <span class="s-card-num">— 01</span>
-        <h3>Nutrición Personalizada</h3>
-        <p>Un plan diseñado exclusivamente para ti. Sin dietas genéricas ni restricciones vacías. Hábitos reales que se sostienen en el tiempo y respetan tu cuerpo y estilo de vida.</p>
-        <a href="https://wa.me/34687864034?text=Me%20interesa%20el%20asesoramiento%20nutricional" target="_blank" rel="noopener" class="s-card-link">
+        <h3>Asesoría Nutricional Integral</h3>
+        <p>Plan personalizado, seguimiento semanal y evaluación corporal. Hábitos reales que respetan tu cuerpo y estilo de vida.</p>
+        <a href="https://wa.me/34687864034?text=Me%20interesa%20la%20asesor%C3%ADa%20nutricional" target="_blank" rel="noopener" class="s-card-link">
           Saber más <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
         </a>
       </div>
-      <div class="s-card reveal" style="transition-delay:.15s">
+      <div class="s-card reveal" style="transition-delay:.1s">
         <span class="s-card-num">— 02</span>
-        <h3>Presoterapia Profesional</h3>
-        <p>Drenaje linfático mediante presión graduada. Reduce la retención de líquidos, mejora la circulación, elimina toxinas y trata la celulitis de forma visible y progresiva.</p>
+        <h3>Presoterapia y Termoterapia</h3>
+        <p>Drenaje linfático con presión graduada y calor terapéutico. Elimina líquidos, reduce celulitis y mejora la circulación.</p>
         <a href="#presoterapia" class="s-card-link">
           Descubrir más <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
         </a>
       </div>
-      <div class="s-card reveal" style="transition-delay:.25s">
+      <div class="s-card reveal" style="transition-delay:.15s">
         <span class="s-card-num">— 03</span>
-        <h3>Seguimiento Continuo</h3>
-        <p>No te dejamos sola. Cada fase tiene revisión, ajuste y acompañamiento. Porque los resultados duraderos se construyen con constancia y con alguien que te escucha.</p>
-        <a href="https://wa.me/34687864034?text=Me%20gustar%C3%ADa%20pedir%20cita" target="_blank" rel="noopener" class="s-card-link">
-          Empezar ahora <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
+        <h3>Ritual Facial Coreano</h3>
+        <p>Skincare con línea coreana: luminosidad, hidratación, antienvejecimiento y antiarrugas. Incluye masaje drenante y yoga facial. 25€/sesión.</p>
+        <a href="#skincare" class="s-card-link">
+          Ver más <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
         </a>
+      </div>
+      <div class="s-card reveal" style="transition-delay:.2s">
+        <span class="s-card-num">— 04</span>
+        <h3>Ritual 3D</h3>
+        <p>Depura, Drena, Desintoxica. Plan DETOX + 2 sesiones de presoterapia con termoterapia + evaluación corporal y seguimiento. 45€.</p>
+        <a href="#promos" class="s-card-link">
+          Descubrir <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
+        </a>
+      </div>
+      <div class="s-card reveal" style="transition-delay:.25s">
+        <span class="s-card-num">— 05</span>
+        <h3>Recover 7</h3>
+        <p>Programa especializado en rendimiento deportivo. Recuperación muscular, descanso y optimización de tu cuerpo para el deporte.</p>
+        <a href="https://wa.me/34687864034?text=Me%20interesa%20el%20programa%20Recover%207" target="_blank" rel="noopener" class="s-card-link">
+          Consultar <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARALLAX DIVIDER -->
+<section class="parallax-divider">
+  <div class="parallax-bg"></div>
+  <div class="parallax-content reveal">
+    <h2>Reconecta <em>contigo</em></h2>
+    <p>Bienestar integral para cuerpo y mente. Tu espacio de cuidado personal en Coín, Málaga.</p>
+  </div>
+</section>
+
+<!-- SKINCARE COREANO -->
+<section class="skincare" id="skincare">
+  <div class="container">
+    <div class="skincare-grid">
+      <div class="skincare-img reveal-l">
+        <img src="img/skincare-coreano.jpeg" alt="Skincare Coreano - Tratamiento facial con línea coreana, incluye masaje drenante y yoga facial. 25€ por sesión" loading="lazy"/>
+      </div>
+      <div class="reveal-r">
+        <span class="s-label">Tratamiento facial</span>
+        <h2 class="s-title">Skincare <em>Coreano</em></h2>
+        <div class="gold-rule"></div>
+        <p style="margin-top:1.4rem;font-size:.92rem;color:var(--mocha-l);line-height:1.8">Con nuestra línea coreana vas a conseguir una piel radiante, joven y saludable. Incluye masaje drenante y yoga facial en cada sesión.</p>
+        <ul class="skincare-benefits">
+          <li>Luminosidad y tono unificado</li>
+          <li>Limpieza profunda</li>
+          <li>Hidratación intensa</li>
+          <li>Efecto antienvejecimiento</li>
+          <li>Antiarrugas</li>
+          <li>Activa la microcirculación facial</li>
+          <li>Eliminación de toxinas y oxigenación celular</li>
+        </ul>
+        <div class="skincare-price">
+          <span class="price-num">25€</span>
+          <span class="price-unit">/ sesión</span>
+        </div>
+        <div style="margin-top:1.4rem">
+          <a href="https://wa.me/34687864034?text=Hola%2C%20me%20interesa%20el%20Skincare%20Coreano" target="_blank" rel="noopener" class="btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.118 1.522 5.851L0 24l6.293-1.652A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.011-1.375l-.36-.214-3.733.98.998-3.642-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+            Reservar Skincare Coreano
+          </a>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:3rem">
+      <div class="skincare-img reveal" style="max-width:600px;margin:0 auto">
+        <img src="img/beneficios-skincare-coreano.jpeg" alt="Beneficios del Skincare Coreano: Hidratación profunda, piel más luminosa y firme, activa la microcirculación facial, eliminación de toxinas y mejora de la oxigenación celular" loading="lazy"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMOS: COMBO BELLEZA + RITUAL 3D -->
+<section class="promos" id="promos">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="s-label">Ofertas especiales</span>
+      <h2 class="s-title">Nuestras <em>promociones</em></h2>
+      <div class="gold-rule gold-rule--c"></div>
+    </div>
+    <div class="promos-grid">
+      <div class="promo-card reveal-l">
+        <img src="img/combo-belleza.jpeg" alt="Combo Belleza 39€ - Skincare con línea coreana + Presoterapia + Termoterapia + Evaluación corporal. Beneficios: elimina líquidos, reduce celulitis, mejora circulación, hidrata y rejuvenece, ilumina y unifica el tono, piel más lisa firme y saludable" loading="lazy"/>
+        <div class="promo-overlay">
+          <a href="https://wa.me/34687864034?text=Hola%2C%20me%20interesa%20el%20Combo%20Belleza%20de%2039%E2%82%AC" target="_blank" rel="noopener" class="btn-primary">
+            Reservar Combo 39€
+          </a>
+        </div>
+      </div>
+      <div class="promo-card reveal-r">
+        <img src="img/ritual-3d.jpeg" alt="Ritual 3D por 45€ - Depura, Drena, Desintoxica. Incluye Plan DETOX, 2 sesiones con aparatología reductora: Presoterapia con Termoterapia, Evaluación corporal + seguimiento semanal" loading="lazy"/>
+        <div class="promo-overlay">
+          <a href="https://wa.me/34687864034?text=Hola%2C%20me%20interesa%20el%20Ritual%203D%20de%2045%E2%82%AC" target="_blank" rel="noopener" class="btn-primary">
+            Reservar Ritual 3D 45€
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -380,20 +528,20 @@
     </div>
     <div class="stats-grid">
       <div class="stat-cell reveal" style="transition-delay:.05s">
-        <div class="stat-num"><span class="counter" data-target="100">0</span><span class="stat-suf">%</span></div>
-        <div class="stat-lbl">Plan personalizado</div>
+        <div class="stat-num"><span class="counter" data-target="5">0</span></div>
+        <div class="stat-lbl">Tratamientos especializados</div>
       </div>
       <div class="stat-cell reveal" style="transition-delay:.15s">
-        <div class="stat-num" style="font-size:clamp(1.8rem,3.5vw,2.8rem)">2&nbsp;<span style="font-size:.45em;opacity:.45;font-weight:300">en</span>&nbsp;1</div>
-        <div class="stat-lbl">Nutrición + Presoterapia</div>
+        <div class="stat-num" style="font-size:clamp(1.8rem,3.5vw,2.8rem)">25€</div>
+        <div class="stat-lbl">Skincare Coreano / sesión</div>
       </div>
       <div class="stat-cell reveal" style="transition-delay:.25s">
-        <div class="stat-num">1ª<span class="stat-suf">sesión</span></div>
-        <div class="stat-lbl">Presoterapia de regalo</div>
+        <div class="stat-num" style="font-size:clamp(1.8rem,3.5vw,2.8rem)">39€</div>
+        <div class="stat-lbl">Combo Belleza completo</div>
       </div>
       <div class="stat-cell reveal" style="transition-delay:.35s">
-        <div class="stat-num" style="font-size:clamp(1.9rem,3.8vw,3rem)">Coín</div>
-        <div class="stat-lbl">Tu centro de bienestar</div>
+        <div class="stat-num" style="font-size:clamp(1.8rem,3.5vw,2.8rem)">45€</div>
+        <div class="stat-lbl">Ritual 3D Detox</div>
       </div>
     </div>
   </div>
@@ -402,12 +550,12 @@
 <section class="gift" id="oferta">
   <div class="container">
     <div class="reveal">
-      <div class="gift-sup">Oferta especial de bienvenida</div>
-      <h2>Primera evaluación nutricional<br/><em>+ sesión de presoterapia gratis</em></h2>
-      <p class="gift-body">Da el primer paso sin riesgo. Ven a conocernos, cuéntanos tus objetivos<br/>y empieza a sentirte mejor desde el primer día.</p>
-      <a href="https://wa.me/34687864034?text=Hola%2C%20me%20interesa%20la%20evaluaci%C3%B3n%20nutricional%20con%20presoterapia%20gratis" target="_blank" rel="noopener" class="btn-primary" style="background:var(--mocha);color:var(--champ);box-shadow:0 6px 28px rgba(30,18,16,.25)">
+      <div class="gift-sup">Combo Belleza · Oferta estrella</div>
+      <h2>Skincare Coreano + Presoterapia<br/><em>+ Termoterapia por solo 39€</em></h2>
+      <p class="gift-body">Incluye evaluación corporal completa. Hidrata, rejuvenece, ilumina y unifica el tono.<br/>Elimina líquidos, reduce celulitis y mejora la circulación.</p>
+      <a href="https://wa.me/34687864034?text=Hola%2C%20me%20interesa%20el%20Combo%20Belleza%20de%2039%E2%82%AC" target="_blank" rel="noopener" class="btn-primary" style="background:var(--mocha);color:var(--champ);box-shadow:0 6px 28px rgba(30,18,16,.25)">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.118 1.522 5.851L0 24l6.293-1.652A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.011-1.375l-.36-.214-3.733.98.998-3.642-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
-        Quiero mi sesión gratis
+        Quiero mi Combo Belleza 39€
       </a>
     </div>
   </div>
@@ -469,15 +617,41 @@
   </div>
 </section>
 
+<!-- BONOS -->
+<section class="bonos" id="bonos">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="s-label" style="color:var(--champ)">Ahorra con nuestros bonos</span>
+      <h2 class="s-title s-title--lt">Bonos <em>exclusivos</em></h2>
+      <div class="gold-rule gold-rule--c"></div>
+      <p style="margin-top:1rem;font-size:.88rem;color:rgba(254,252,247,.45);line-height:1.8">Bonos exclusivos para clientes con Programas de nutrición. Reconecta contigo.</p>
+    </div>
+    <div class="bonos-grid">
+      <div class="bono-card reveal-l">
+        <img src="img/bonos-presoterapia.jpeg" alt="Bonos Presoterapia-Termo: 5 sesiones presoterapia, 8 sesiones presoterapia. Bono exclusivo para clientes con Programas de nutrición. Reconecta contigo." loading="lazy"/>
+      </div>
+      <div class="bono-card reveal-r">
+        <img src="img/bonos-combo.jpeg" alt="Bonos Presoterapia y Termo + Ritual facial coreano: 5 sesiones presoterapia + 2 Ritual coreano, 8 sesiones presoterapia + 3 Ritual coreano. Bono exclusivo para clientes con Programas de nutrición." loading="lazy"/>
+      </div>
+    </div>
+    <div class="reveal" style="text-align:center;margin-top:2.5rem">
+      <a href="https://wa.me/34687864034?text=Hola%2C%20me%20interesan%20los%20bonos%20de%20presoterapia" target="_blank" rel="noopener" class="btn-primary">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.118 1.522 5.851L0 24l6.293-1.652A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.011-1.375l-.36-.214-3.733.98.998-3.642-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+        Consultar bonos por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
 <section class="cta-final" id="contacto">
   <div class="container">
     <div class="reveal">
       <h2>Tu cuerpo te lo<br/><em>agradecerá</em></h2>
-      <p class="cta-final-sub">Estamos en Coín, atendemos con cita previa<br/>y estamos deseando conocerte.</p>
+      <p class="cta-final-sub">Mari Leiva te espera en C/Arquímedes, 32 · Coín, Málaga<br/>Atención con cita previa · Resultados reales</p>
       <div class="cta-pills">
-        <span class="cta-pill">📍 Coín, Málaga</span>
+        <span class="cta-pill">📍 C/Arquímedes, 32 · Coín</span>
         <span class="cta-pill">📅 Cita previa</span>
-        <span class="cta-pill">📞 687 86 40 34</span>
+        <span class="cta-pill">📞 687 864 034</span>
       </div>
       <a href="https://wa.me/34687864034?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20cita%20en%20Centro%20Cu%C3%ADdate%20%F0%9F%8C%B8" target="_blank" rel="noopener" class="btn-primary" style="font-size:.85rem;padding:1.1rem 2.5rem">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.118 1.522 5.851L0 24l6.293-1.652A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.011-1.375l-.36-.214-3.733.98.998-3.642-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
@@ -490,16 +664,17 @@
 
 <footer>
   <div class="foot-logo">Centro <span>Cuídate</span></div>
-  <div class="foot-tag">Nutrición & Presoterapia · Coín, Málaga</div>
+  <div class="foot-tag">Bienestar Integral · Mari Leiva · C/Arquímedes, 32 · Coín, Málaga</div>
   <div class="foot-links">
     <a href="#servicios">Servicios</a>
+    <a href="#skincare">Skincare Coreano</a>
+    <a href="#promos">Promociones</a>
     <a href="#presoterapia">Presoterapia</a>
-    <a href="#celulitis">Celulitis</a>
-    <a href="#oferta">Oferta</a>
+    <a href="#bonos">Bonos</a>
     <a href="#contacto">Contacto</a>
     <a href="https://wa.me/34687864034" target="_blank" rel="noopener">WhatsApp</a>
   </div>
-  <div class="foot-copy">© 2025 Centro Cuídate · Coín, Málaga · Todos los derechos reservados</div>
+  <div class="foot-copy">© 2025 Centro Cuídate · Mari Leiva · C/Arquímedes, 32, Coín, Málaga · 687 864 034 · Todos los derechos reservados</div>
 </footer>
 
 <a href="https://wa.me/34687864034?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20cita%20en%20Centro%20Cu%C3%ADdate%20%F0%9F%8C%B8" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp">
