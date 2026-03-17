@@ -28,7 +28,9 @@
     /* NAV */
     nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1.4rem 4rem;transition:all .5s ease;}
     nav.solid{background:rgba(30,18,16,.93);backdrop-filter:blur(18px);padding:1rem 4rem;box-shadow:0 1px 0 rgba(201,169,110,.12);}
-    .nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:400;color:var(--ivory);text-decoration:none;letter-spacing:.05em;}
+    .nav-logo{display:flex;align-items:center;gap:.7rem;font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:400;color:var(--ivory);text-decoration:none;letter-spacing:.05em;}
+    .nav-logo img{height:40px;width:auto;border-radius:50%;transition:height .3s}
+    nav.solid .nav-logo img{height:32px}
     .nav-logo span{color:var(--champ);font-style:italic}
     .nav-right{display:flex;align-items:center;gap:2rem}
     .nav-tel{font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.45);text-decoration:none;transition:color .2s;}
@@ -241,6 +243,15 @@
     /* HERO IMAGE */
     .hero-logo-img{width:min(280px,60vw);height:auto;filter:drop-shadow(0 8px 32px rgba(0,0,0,.3));animation:fadeUp .8s .3s both}
 
+    /* PARALLAX DIVIDER */
+    .parallax-divider{position:relative;height:45vh;min-height:320px;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center}
+    .parallax-bg{position:absolute;inset:-20%;background-image:url('img/logo-variantes.jpeg');background-size:cover;background-position:center;background-attachment:fixed;filter:brightness(.35);z-index:0}
+    @supports (-webkit-touch-callout:none){.parallax-bg{background-attachment:scroll}}
+    .parallax-content{position:relative;z-index:1;padding:2rem}
+    .parallax-content h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.8rem);font-weight:300;color:var(--ivory);line-height:1.2;margin-bottom:.8rem;text-shadow:0 2px 20px rgba(0,0,0,.5)}
+    .parallax-content h2 em{font-style:italic;color:var(--champ)}
+    .parallax-content p{font-size:.95rem;color:rgba(254,252,247,.55);max-width:500px;margin:0 auto;line-height:1.7;text-shadow:0 1px 8px rgba(0,0,0,.4)}
+
     /* ABOUT / MARI LEIVA */
     .about{padding:5rem 0;background:var(--cream);text-align:center}
     .about-name{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--mocha);font-weight:400;margin-bottom:.5rem}
@@ -267,7 +278,7 @@
 <div id="cursor-glow"></div>
 
 <nav id="nav">
-  <a href="#" class="nav-logo">Centro <span>Cuídate</span></a>
+  <a href="#" class="nav-logo"><img src="img/logo-centro-cuidate.jpeg" alt="Logo Centro Cuídate"/>Centro <span>Cuídate</span></a>
   <div class="nav-right">
     <a href="tel:+34687864034" class="nav-tel">687 864 034</a>
     <a href="https://wa.me/34687864034?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20cita%20en%20Centro%20Cu%C3%ADdate" target="_blank" rel="noopener" class="nav-btn">
@@ -382,6 +393,15 @@
         </a>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- PARALLAX DIVIDER -->
+<section class="parallax-divider">
+  <div class="parallax-bg"></div>
+  <div class="parallax-content reveal">
+    <h2>Reconecta <em>contigo</em></h2>
+    <p>Bienestar integral para cuerpo y mente. Tu espacio de cuidado personal en Coín, Málaga.</p>
   </div>
 </section>
 
