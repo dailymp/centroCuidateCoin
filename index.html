@@ -370,9 +370,9 @@
     /* HERO IMAGE - medallion circle */
     .hero-img-wrap{position:relative;display:inline-block}
     .hero-logo-img{
-      width:min(340px,72vw);
+      width:min(360px,78vw);
       height:auto;
-      object-fit:contain;
+      object-fit:cover;
       border-radius:16px;
       background:#fff;
       animation:medalFloat 6s ease-in-out infinite, fadeUp .9s .3s both;
@@ -412,7 +412,7 @@
 
     /* PARALLAX DIVIDER */
     .parallax-divider{position:relative;height:45vh;min-height:320px;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center}
-    .parallax-bg{position:absolute;inset:-20%;background-image:url('img/logo-variantes.jpeg');background-size:cover;background-position:center;background-attachment:fixed;filter:brightness(.35);z-index:0}
+    .parallax-bg{position:absolute;inset:-20%;background-image:url('img/logo-circle-gold.png');background-size:cover;background-position:center;background-attachment:fixed;filter:brightness(.32) sepia(.2);z-index:0}
     @supports (-webkit-touch-callout:none){.parallax-bg{background-attachment:scroll}}
     .parallax-content{position:relative;z-index:1;padding:2rem}
     .parallax-content h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.8rem);font-weight:300;color:var(--ivory);line-height:1.2;margin-bottom:.8rem;text-shadow:0 2px 20px rgba(0,0,0,.5)}
@@ -439,6 +439,40 @@
     @keyframes ringPulse{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:0;transform:scale(1.55)}}
     @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
     @media(max-width:600px){.container{padding:0 1.2rem}.hero-left{padding:7rem 1.2rem 2.5rem}.hero-right{padding:1.5rem 1.2rem 4rem}.services{padding:5rem 0}.preso-feat{padding:5rem 0 7rem}.stats{padding:4rem 0}.gift{padding:5rem 0}.process{padding:5rem 0}.cta-final{padding:5rem 0}.s-card{padding:2rem 1.4rem}.preso-feat-grid,.cel-grid{gap:2rem}.skincare{padding:5rem 0}.promos{padding:5rem 0}.bonos{padding:5rem 0}}
+
+    /* YOGA FACIAL CONSCIENTE */
+    .yoga-facial{padding:8rem 0;background:linear-gradient(160deg,#f5ede8 0%,#fdf6f0 40%,#f0ebe6 70%,#f5ede8 100%);position:relative;overflow:hidden;}
+    .yoga-facial::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 85% 15%,rgba(155,94,104,.1) 0%,transparent 45%),radial-gradient(ellipse at 15% 85%,rgba(201,169,110,.08) 0%,transparent 45%);pointer-events:none;}
+    .yoga-facial-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+    @media(max-width:900px){.yoga-facial-grid{grid-template-columns:1fr;gap:3rem}}
+    .yoga-facial-imgs{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+    @media(max-width:600px){.yoga-facial-imgs{grid-template-columns:1fr}}
+    .yoga-facial-img{border-radius:14px;overflow:hidden;box-shadow:0 16px 50px rgba(0,0,0,.12);transition:transform .3s,box-shadow .3s;}
+    .yoga-facial-img:hover{transform:translateY(-4px);box-shadow:0 24px 60px rgba(0,0,0,.18)}
+    .yoga-facial-img img{width:100%;height:auto;display:block;}
+    .yoga-facial-price{display:inline-flex;align-items:center;gap:.8rem;margin-top:1.8rem;padding:1.1rem 1.8rem;background:linear-gradient(135deg,#2d4a2a,#3d6336);border-radius:10px;color:#fff;box-shadow:0 6px 24px rgba(45,74,42,.25);}
+    .yoga-facial-price .price-num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:600;color:#a8d49a;}
+    .yoga-facial-price .price-label{font-size:.78rem;font-weight:300;color:rgba(255,255,255,.75);line-height:1.4;}
+    .yoga-check-list{list-style:none;display:flex;flex-direction:column;gap:.85rem;margin:1.2rem 0;}
+    .yoga-check-list li{display:flex;align-items:flex-start;gap:.8rem;font-size:.9rem;color:var(--mocha-m);line-height:1.65;}
+    .yoga-check-icon{width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,#4a7a44,#3d6336);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#fff;font-size:.65rem;font-weight:700;margin-top:.15rem;}
+    .yoga-subsection{margin-top:1.8rem;}
+    .yoga-subsection-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--mocha);margin-bottom:1rem;letter-spacing:.02em;}
+
+    /* TRABAJA CON NOSOTRAS */
+    .embajadoras{padding:8rem 0;background:linear-gradient(145deg,#1e1210 0%,#2e1c10 35%,#271810 65%,#1e1210 100%);position:relative;overflow:hidden;text-align:center;}
+    .embajadoras::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 75% 60% at 50% 40%,rgba(201,169,110,.35) 0%,rgba(201,169,110,.1) 40%,transparent 65%),radial-gradient(ellipse at 10% 90%,rgba(155,94,104,.2) 0%,transparent 35%),radial-gradient(ellipse at 90% 10%,rgba(201,169,110,.15) 0%,transparent 35%);pointer-events:none;}
+    .embajadoras-badge{display:inline-flex;align-items:center;gap:.6rem;border:1px solid rgba(201,169,110,.35);border-radius:2px;font-size:.6rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--champ);padding:.5rem 1.2rem;margin-bottom:1.8rem;background:rgba(201,169,110,.06);}
+    .embajadoras h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,5.5vw,4.5rem);font-weight:300;color:var(--ivory);line-height:1.1;margin-bottom:1rem;}
+    .embajadoras h2 em{font-style:italic;background:linear-gradient(90deg,var(--gold-dk),var(--champ),#FFF8E7,var(--champ),var(--gold-dk));background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:goldShimmer 3.5s linear infinite;}
+    .embajadoras-sub{font-size:.95rem;font-weight:300;color:rgba(254,252,247,.68);max-width:580px;margin:0 auto 2.5rem;line-height:1.8;}
+    .embajadoras-perks{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:860px;margin:0 auto 3rem;text-align:left;}
+    @media(max-width:720px){.embajadoras-perks{grid-template-columns:1fr;max-width:400px}}
+    .emb-perk{background:rgba(255,255,255,.04);border:1px solid rgba(201,169,110,.18);border-radius:10px;padding:1.6rem 1.4rem;}
+    .emb-perk-icon{font-size:1.5rem;margin-bottom:.8rem;}
+    .emb-perk h4{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;color:var(--champ);margin-bottom:.5rem;}
+    .emb-perk p{font-size:.82rem;color:rgba(254,252,247,.6);line-height:1.65;}
+    .embajadoras-cta-note{margin-top:1.2rem;font-size:.72rem;color:rgba(254,252,247,.35);letter-spacing:.5px;}
   </style>
 </head>
 <body>
@@ -450,9 +484,11 @@
     <li><a href="#inicio">Inicio</a></li>
     <li><a href="#servicios">Servicios</a></li>
     <li><a href="#skincare">Skincare</a></li>
+    <li><a href="#yoga-facial">Yoga Facial</a></li>
     <li><a href="#presoterapia">Presoterapia</a></li>
     <li><a href="#promos">Promociones</a></li>
     <li><a href="#bonos">Bonos</a></li>
+    <li><a href="#embajadoras">Trabaja con Nosotras</a></li>
     <li><a href="#contacto">Contacto</a></li>
   </ul>
   <div class="nav-right">
@@ -471,9 +507,11 @@
   <a href="#inicio" class="nav-mobile-link">Inicio</a>
   <a href="#servicios" class="nav-mobile-link">Servicios</a>
   <a href="#skincare" class="nav-mobile-link">Skincare</a>
+  <a href="#yoga-facial" class="nav-mobile-link">Yoga Facial</a>
   <a href="#presoterapia" class="nav-mobile-link">Presoterapia</a>
   <a href="#promos" class="nav-mobile-link">Promociones</a>
   <a href="#bonos" class="nav-mobile-link">Bonos</a>
+  <a href="#embajadoras" class="nav-mobile-link">Trabaja con Nosotras</a>
   <a href="#contacto" class="nav-mobile-link">Contacto</a>
 </div>
 
@@ -498,7 +536,7 @@
   <div class="hero-right">
     <div style="position:relative;display:inline-block">
       <div class="hero-img-wrap">
-        <img src="img/logo-main.png" alt="Centro Cuídate - Bienestar Integral en Coín Málaga" class="hero-logo-img"/>
+        <img src="img/ritual-belleza-drenaje.jpeg" alt="Ritual Belleza &amp; Drenaje - Skin Care Coreano + Yoga Facial + Presoterapia. Pack Completo 39€. Centro Cuídate Coín" class="hero-logo-img"/>
       </div>
       <div class="hero-card">
         <span class="hero-card-label">Combo Belleza</span>
@@ -631,6 +669,58 @@
     <div style="margin-top:3rem">
       <div class="skincare-img reveal" style="max-width:600px;margin:0 auto">
         <img src="img/beneficios-skincare-coreano.jpeg" alt="Beneficios del Skincare Coreano: Hidratación profunda, piel más luminosa y firme, activa la microcirculación facial, eliminación de toxinas y mejora de la oxigenación celular" loading="lazy"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- YOGA FACIAL CONSCIENTE -->
+<section class="yoga-facial" id="yoga-facial">
+  <div class="container">
+    <div class="reveal" style="text-align:center;margin-bottom:4rem">
+      <span class="s-label" style="color:var(--rose)">Taller Experiencial</span>
+      <h2 class="s-title">Yoga Facial <em>Consciente</em></h2>
+      <div class="gold-rule gold-rule--c"></div>
+      <p style="margin-top:1.2rem;font-size:.95rem;color:var(--mocha-l);max-width:560px;margin-left:auto;margin-right:auto;line-height:1.8">Aprende a rejuvenecer tu rostro de forma natural mientras te relajas y reconectas contigo.</p>
+    </div>
+    <div class="yoga-facial-grid">
+      <div class="reveal-l">
+        <div class="yoga-facial-imgs">
+          <div class="yoga-facial-img">
+            <img src="img/yoga-facial-sesion.jpeg" alt="Yoga Facial Consciente - Taller experiencial en Centro Cuídate Coín. Plaza 10€, incluye cosmética coreana" loading="lazy"/>
+          </div>
+          <div class="yoga-facial-img">
+            <img src="img/yoga-facial-taller.jpeg" alt="Yoga Facial Consciente - Qué viviremos en el taller: reconexión, técnicas de rejuvenecimiento facial natural, movimientos para tonificar y redefinir" loading="lazy"/>
+          </div>
+        </div>
+        <div class="yoga-facial-price">
+          <span class="price-num">10€</span>
+          <span class="price-label">por plaza<br/>Incluye todo el material<br/>de cosmética coreana</span>
+        </div>
+      </div>
+      <div class="reveal-r">
+        <span class="s-label" style="color:var(--rose)">¿Qué viviremos en el taller?</span>
+        <p style="font-size:.9rem;color:var(--mocha-m);line-height:1.8;margin-bottom:1rem">No vienes solo a aprender técnicas de rejuvenecimiento facial natural, sino también a vivir:</p>
+        <ul class="yoga-check-list">
+          <li><span class="yoga-check-icon">✓</span><span>Un momento especial de <strong>reconexión contigo misma</strong></span></li>
+          <li><span class="yoga-check-icon">✓</span><span>Un espacio sin prisas y con mucho <strong>amor propio</strong></span></li>
+          <li><span class="yoga-check-icon">✓</span><span>Una conexión real con <strong>tu rostro</strong></span></li>
+        </ul>
+        <div class="yoga-subsection">
+          <div class="yoga-subsection-title">Vamos a aprender</div>
+          <ul class="yoga-check-list">
+            <li><span class="yoga-check-icon">✓</span><span>Movimientos claves para <strong>tonificar y redefinir</strong> y rejuvenecer tu rostro</span></li>
+            <li><span class="yoga-check-icon">✓</span><span>Técnicas para <strong>suavizar líneas de expresión</strong></span></li>
+            <li><span class="yoga-check-icon">✓</span><span>Cómo activar la circulación y <strong>drenar de forma natural</strong></span></li>
+            <li><span class="yoga-check-icon">✓</span><span>Rutina práctica para <strong>integrar en tu día a día</strong></span></li>
+          </ul>
+        </div>
+        <div style="margin-top:2rem;display:flex;flex-wrap:wrap;gap:1rem">
+          <a href="https://wa.me/34687864034?text=Hola%2C%20me%20interesa%20el%20Taller%20de%20Yoga%20Facial%20Consciente%20%F0%9F%8C%B8" target="_blank" rel="noopener" class="btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.118 1.522 5.851L0 24l6.293-1.652A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.011-1.375l-.36-.214-3.733.98.998-3.642-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+            Reservar mi plaza · 10€
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -833,6 +923,39 @@
   </div>
 </section>
 
+<!-- TRABAJA CON NOSOTRAS / EMBAJADORAS -->
+<section class="embajadoras" id="embajadoras">
+  <div class="container">
+    <div class="reveal">
+      <div class="embajadoras-badge">✦ Únete a nuestro equipo ✦</div>
+      <h2>Trabaja con <em>nosotras</em></h2>
+      <p class="embajadoras-sub">Únete a nuestro club de embajadoras de la línea de cosmética coreana. Comparte tu pasión por el bienestar y la belleza natural mientras generas ingresos desde donde estés.</p>
+      <div class="embajadoras-perks">
+        <div class="emb-perk reveal" style="transition-delay:.05s">
+          <div class="emb-perk-icon">🌸</div>
+          <h4>Club de Embajadoras</h4>
+          <p>Forma parte de una comunidad de mujeres que cuidan y comparten el bienestar. Acceso a formación exclusiva y productos de cosmética coreana.</p>
+        </div>
+        <div class="emb-perk reveal" style="transition-delay:.15s">
+          <div class="emb-perk-icon">✨</div>
+          <h4>Cosmética Coreana</h4>
+          <p>Representa una de las líneas más innovadoras del mercado. Productos de alta calidad que ya has podido descubrir en nuestros tratamientos.</p>
+        </div>
+        <div class="emb-perk reveal" style="transition-delay:.25s">
+          <div class="emb-perk-icon">💛</div>
+          <h4>Flexibilidad Total</h4>
+          <p>Trabaja a tu ritmo, desde casa o desde el centro. Sin compromiso de horarios. Perfecta compatibilidad con tu vida personal y profesional.</p>
+        </div>
+      </div>
+      <a href="https://wa.me/34687864034?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20el%20club%20de%20embajadoras%20de%20cosm%C3%A9tica%20coreana%20%F0%9F%8C%B8" target="_blank" rel="noopener" class="btn-primary" style="font-size:.8rem;padding:1rem 2.2rem">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.118 1.522 5.851L0 24l6.293-1.652A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.011-1.375l-.36-.214-3.733.98.998-3.642-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+        Quiero ser embajadora
+      </a>
+      <p class="embajadoras-cta-note">Escríbenos y te contamos todos los detalles · Sin compromiso</p>
+    </div>
+  </div>
+</section>
+
 <section class="cta-final" id="contacto">
   <div class="container">
     <div class="reveal">
@@ -858,9 +981,11 @@
   <div class="foot-links">
     <a href="#servicios">Servicios</a>
     <a href="#skincare">Skincare Coreano</a>
-    <a href="#promos">Promociones</a>
+    <a href="#yoga-facial">Yoga Facial</a>
     <a href="#presoterapia">Presoterapia</a>
+    <a href="#promos">Promociones</a>
     <a href="#bonos">Bonos</a>
+    <a href="#embajadoras">Trabaja con Nosotras</a>
     <a href="#contacto">Contacto</a>
     <a href="https://wa.me/34687864034" target="_blank" rel="noopener">WhatsApp</a>
   </div>
