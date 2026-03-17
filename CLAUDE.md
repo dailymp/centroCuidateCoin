@@ -1,11 +1,11 @@
-# CLAUDE.md - Reglas del proyecto Centro Cuidate Coin
+# CLAUDE.md - Reglas del proyecto Centro Cuídate Coín
 
 ## Reglas de trabajo
 
-- **No trabajes mas de 10 minutos en lo mismo** para evitar bucles. Si te atascas, pregunta o informa al usuario.
+- **No trabajes más de 10 minutos en lo mismo** para evitar bucles. Si te atascas, pregunta o informa al usuario.
 - Si te bloqueas en algo, **pregunta al usuario** antes de seguir intentando.
-- Mantener la calidad premium del diseno web en todo momento.
-- Usar todas las imagenes proporcionadas por la clienta integrando la informacion que contienen.
+- Mantener la calidad premium del diseño web en todo momento.
+- Usar todas las imágenes proporcionadas por la clienta integrando la informacion que contienen.
 - No perder informacion de las fotos: precios, servicios, beneficios, datos de contacto.
 - **Hacer cambios grandes por partes/secciones** en lugar de reescribir archivos completos de una sola vez. Editar seccion por seccion.
 - Si hay una manera mas rapida o eficiente de hacer algo, **proponerla activamente** al usuario.
@@ -13,8 +13,8 @@
 
 ## Datos del negocio
 
-- **Nombre**: Centro Cuidate - Bienestar Integral
+- **Nombre**: Centro Cuídate - Bienestar Integral
 - **Profesional**: Mari Leiva
-- **Direccion**: C/Arquimedes, 32 - Coin (Malaga)
-- **Telefono**: 687 864 034
+- **Dirección**: C/Arquímedes, 32 - Coín (Málaga)
+- **Teléfono**: 687 864 034
 - **WhatsApp**: 687 864 034
