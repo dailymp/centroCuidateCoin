@@ -32,9 +32,9 @@
   <!-- Canonical -->
   <link rel="canonical" href="https://centrocuidate.es/"/>
   <!-- Preload LCP hero image -->
-  <link rel="preload" as="image" href="img/logo-centro-cuidate.jpeg" fetchpriority="high"/>
-  <link rel="icon" type="image/png" href="favicon.png"/>
-  <link rel="apple-touch-icon" href="favicon.png"/>
+  <link rel="preload" as="image" href="img/logo-circle.png" fetchpriority="high"/>
+  <link rel="icon" type="image/png" href="img/logo-circle.png"/>
+  <link rel="apple-touch-icon" href="img/logo-circle.png"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
@@ -115,8 +115,8 @@
     nav.solid{background:linear-gradient(135deg,rgba(30,18,16,.97) 0%,rgba(58,36,32,.95) 60%,rgba(30,18,16,.97) 100%);backdrop-filter:blur(20px);padding:.8rem 4rem;box-shadow:0 1px 0 rgba(201,169,110,.18),0 4px 24px rgba(0,0,0,.3);}
     nav.solid::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,169,110,.4),rgba(232,213,183,.3),rgba(201,169,110,.4),transparent);}
     .nav-logo{display:flex;align-items:center;gap:.7rem;font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:400;color:var(--ivory);text-decoration:none;letter-spacing:.05em;}
-    .nav-logo img{height:44px;width:auto;border-radius:50%;transition:height .3s;filter:drop-shadow(0 2px 8px rgba(201,169,110,.4));}
-    nav.solid .nav-logo img{height:36px}
+    .nav-logo img{height:44px;width:44px;border-radius:50%;object-fit:cover;transition:height .3s,width .3s;box-shadow:0 0 0 2px rgba(201,169,110,.45),0 4px 16px rgba(0,0,0,.35);background:#fff;}
+    nav.solid .nav-logo img{height:36px;width:36px}
     .nav-logo span{color:var(--champ);font-style:italic}
     /* NAV MENU */
     .nav-menu{display:flex;align-items:center;gap:.3rem;list-style:none;}
@@ -159,7 +159,7 @@
     @media(max-width:900px){.hero-eyebrow{justify-content:center}.hero-eyebrow::before,.hero-eyebrow::after{display:none}}
     .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6.5vw,5.8rem);font-weight:300;line-height:1.05;color:var(--ivory);margin-bottom:1.6rem;}
     .hero h1 em{font-style:italic;color:var(--champ)}
-    .hero-sub{font-size:clamp(.88rem,1.5vw,1rem);font-weight:300;color:rgba(254,252,247,.5);line-height:1.85;max-width:400px;margin-bottom:2.8rem;}
+    .hero-sub{font-size:clamp(.88rem,1.5vw,1rem);font-weight:300;color:rgba(254,252,247,.72);line-height:1.85;max-width:400px;margin-bottom:2.8rem;}
     @media(max-width:900px){.hero-sub{max-width:100%}}
     .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2.8rem}
     @media(max-width:900px){.hero-btns{justify-content:center}}
@@ -170,7 +170,7 @@
     .btn-primary svg{width:17px;height:17px;flex-shrink:0}
     .btn-ghost{display:inline-flex;align-items:center;gap:.6rem;border:1px solid rgba(254,252,247,.2);color:var(--ivory);font-size:.75rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;padding:.9rem 2rem;border-radius:2px;transition:border-color .25s,background .25s;}
     .btn-ghost:hover{border-color:var(--champ);background:rgba(201,169,110,.08)}
-    .hero-meta{display:flex;align-items:center;gap:1.8rem;flex-wrap:wrap;font-size:.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(254,252,247,.3);}
+    .hero-meta{display:flex;align-items:center;gap:1.8rem;flex-wrap:wrap;font-size:.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(254,252,247,.55);}
     @media(max-width:900px){.hero-meta{justify-content:center}}
     .hero-right{display:flex;align-items:center;justify-content:center;padding:6rem 4vw 6rem 2vw;position:relative;}
     @media(max-width:900px){.hero-right{padding:2rem 1.5rem 5rem;min-height:70vw}}
@@ -229,31 +229,31 @@
     .s-card-link svg{width:13px;height:13px}
 
     /* PRESOTERAPIA */
-    .preso-feat{padding:8rem 0 10rem;background:linear-gradient(160deg,#1e1210 0%,#2c1a0e 30%,#241610 55%,#2e1c10 75%,#1e1210 100%);position:relative;overflow:hidden;clip-path:polygon(0 0,100% 0,100% 93%,0 100%);}
+    .preso-feat{padding:8rem 0 10rem;background:linear-gradient(160deg,var(--ivory) 0%,var(--cream) 40%,#EDE0D0 65%,var(--ivory) 100%);position:relative;overflow:hidden;clip-path:polygon(0 0,100% 0,100% 93%,0 100%);}
     @media(max-width:600px){.preso-feat{clip-path:polygon(0 0,100% 0,100% 97%,0 100%)}}
-    .preso-feat::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 90% 10%,rgba(201,169,110,.22) 0%,transparent 45%),radial-gradient(ellipse at 10% 90%,rgba(232,213,183,.14) 0%,transparent 45%),radial-gradient(ellipse at 50% 50%,rgba(201,169,110,.06) 0%,transparent 60%);pointer-events:none;}
+    .preso-feat::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 90% 10%,rgba(201,169,110,.15) 0%,transparent 45%),radial-gradient(ellipse at 10% 90%,rgba(201,169,110,.1) 0%,transparent 45%);pointer-events:none;}
     .preso-feat-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
     @media(max-width:900px){.preso-feat-grid{grid-template-columns:1fr;gap:3rem}}
-    .preso-quote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.45rem,3vw,2.1rem);font-weight:300;color:var(--ivory);line-height:1.5;margin-bottom:1.8rem;border-left:2px solid var(--champ);padding-left:1.8rem;}
-    .preso-body{font-size:.88rem;color:rgba(254,252,247,.5);line-height:1.85;margin-bottom:2.2rem}
-    .preso-pioneer{display:inline-flex;align-items:flex-start;gap:.8rem;border:1px solid rgba(201,169,110,.2);border-radius:6px;padding:1.1rem 1.4rem;margin-bottom:2.2rem;background:rgba(201,169,110,.04);}
+    .preso-quote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.45rem,3vw,2.1rem);font-weight:300;color:var(--mocha);line-height:1.5;margin-bottom:1.8rem;border-left:3px solid var(--champ);padding-left:1.8rem;}
+    .preso-body{font-size:.88rem;color:var(--mocha-m);line-height:1.85;margin-bottom:2.2rem}
+    .preso-pioneer{display:inline-flex;align-items:flex-start;gap:.8rem;border:1px solid rgba(201,169,110,.35);border-radius:6px;padding:1.1rem 1.4rem;margin-bottom:2.2rem;background:rgba(201,169,110,.08);}
     .preso-pioneer-icon{font-size:1.1rem;flex-shrink:0;margin-top:.1rem}
-    .preso-pioneer-text{font-size:.82rem;font-weight:300;color:rgba(254,252,247,.65);line-height:1.6}
-    .preso-pioneer-text strong{color:var(--champ);font-weight:700}
-    .preso-card{background:rgba(254,252,247,.03);border:1px solid rgba(201,169,110,.12);border-radius:14px;padding:2.5rem;}
-    .preso-card-ttl{font-family:'Cormorant Garamond',serif;font-size:.9rem;font-weight:600;color:var(--champ);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:1.8rem;display:flex;align-items:center;gap:.8rem;}
-    .preso-card-ttl::after{content:'';flex:1;height:1px;background:rgba(201,169,110,.18)}
+    .preso-pioneer-text{font-size:.82rem;font-weight:300;color:var(--mocha-m);line-height:1.6}
+    .preso-pioneer-text strong{color:var(--gold-dk);font-weight:700}
+    .preso-card{background:#fff;border:1px solid rgba(201,169,110,.2);border-radius:14px;padding:2.5rem;box-shadow:0 8px 40px rgba(0,0,0,.06);}
+    .preso-card-ttl{font-family:'Cormorant Garamond',serif;font-size:.9rem;font-weight:600;color:var(--gold-dk);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:1.8rem;display:flex;align-items:center;gap:.8rem;}
+    .preso-card-ttl::after{content:'';flex:1;height:1px;background:rgba(201,169,110,.3)}
     .preso-list{list-style:none;display:flex;flex-direction:column;gap:1rem;margin-bottom:1.8rem}
-    .preso-list li{display:flex;align-items:flex-start;gap:.9rem;font-size:.86rem;color:rgba(254,252,247,.6);line-height:1.65;opacity:0;transform:translateX(18px);transition:opacity .5s,transform .5s;}
+    .preso-list li{display:flex;align-items:flex-start;gap:.9rem;font-size:.86rem;color:var(--mocha-m);line-height:1.65;opacity:0;transform:translateX(18px);transition:opacity .5s,transform .5s;}
     .preso-list li.on{opacity:1;transform:none}
     .preso-list .pl-dot{width:5px;height:5px;border-radius:50%;background:var(--champ);flex-shrink:0;margin-top:.55rem;}
-    .preso-list li strong{color:var(--ivory);font-weight:700}
-    .preso-cellulite{border:1px solid rgba(155,94,104,.35);border-radius:8px;padding:1.4rem;background:rgba(155,94,104,.07);}
-    .preso-cellulite h4{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:400;color:var(--ivory);margin-bottom:.5rem;}
-    .preso-cellulite p{font-size:.8rem;color:rgba(254,252,247,.5);line-height:1.7;margin-bottom:.9rem}
+    .preso-list li strong{color:var(--mocha);font-weight:700}
+    .preso-cellulite{border:1px solid rgba(155,94,104,.25);border-radius:8px;padding:1.4rem;background:rgba(155,94,104,.05);}
+    .preso-cellulite h4{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:400;color:var(--mocha);margin-bottom:.5rem;}
+    .preso-cellulite p{font-size:.8rem;color:var(--mocha-l);line-height:1.7;margin-bottom:.9rem}
     .preso-tags{display:flex;flex-wrap:wrap;gap:.4rem}
-    .ptag{font-size:.6rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(155,94,104,.85);border:1px solid rgba(155,94,104,.3);padding:.22rem .7rem;border-radius:2px;cursor:default;transition:background .2s,color .2s;}
-    .ptag:hover{background:rgba(155,94,104,.15);color:var(--ivory)}
+    .ptag{font-size:.6rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--rose);border:1px solid rgba(155,94,104,.25);padding:.22rem .7rem;border-radius:2px;cursor:default;transition:background .2s,color .2s;}
+    .ptag:hover{background:rgba(155,94,104,.1);color:var(--mocha)}
 
     /* STATS */
     .stats{padding:6rem 0;background:var(--cream)}
@@ -297,26 +297,41 @@
     .cel-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.8rem}
     .cel-tag{font-size:.62rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--rose);border:1px solid rgba(155,94,104,.22);padding:.28rem .8rem;border-radius:2px;}
 
+    /* GOLD SHIMMER TEXT EFFECT */
+    @keyframes goldShimmer{
+      0%{background-position:200% center}
+      100%{background-position:-200% center}
+    }
+    .gold-text-shimmer{
+      background:linear-gradient(90deg,var(--gold-dk) 0%,var(--champ) 25%,#FFF8E7 50%,var(--champ) 75%,var(--gold-dk) 100%);
+      background-size:200% auto;
+      -webkit-background-clip:text;
+      background-clip:text;
+      -webkit-text-fill-color:transparent;
+      animation:goldShimmer 4s linear infinite;
+    }
+
     /* FINAL CTA */
     .cta-final{padding:9rem 0;background:linear-gradient(160deg,#1a0e0c 0%,#2e1c10 30%,#1e1412 55%,#2a1810 80%,#1a0e0c 100%);text-align:center;position:relative;overflow:hidden;}
-    .cta-final::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,rgba(201,169,110,.2) 0%,transparent 55%),radial-gradient(ellipse at 80% 80%,rgba(232,213,183,.08) 0%,transparent 40%),radial-gradient(ellipse at 20% 20%,rgba(201,169,110,.08) 0%,transparent 40%);pointer-events:none;}
+    .cta-final::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,rgba(201,169,110,.25) 0%,transparent 55%),radial-gradient(ellipse at 80% 80%,rgba(232,213,183,.1) 0%,transparent 40%),radial-gradient(ellipse at 20% 20%,rgba(201,169,110,.1) 0%,transparent 40%);pointer-events:none;}
     .cta-final h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,7vw,5.8rem);font-weight:300;color:var(--ivory);line-height:1.1;margin-bottom:1.4rem;}
-    .cta-final h2 em{font-style:italic;color:var(--champ)}
-    .cta-final-sub{font-size:.95rem;font-weight:300;color:rgba(254,252,247,.4);margin-bottom:2.8rem;line-height:1.75}
+    .cta-final h2 em{font-style:italic;background:linear-gradient(90deg,var(--gold-dk),var(--champ),#FFF8E7,var(--champ),var(--gold-dk));background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:goldShimmer 3s linear infinite;}
+    .cta-final-sub{font-size:.95rem;font-weight:300;color:rgba(254,252,247,.65);margin-bottom:2.8rem;line-height:1.75}
     .cta-pills{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin-bottom:2.8rem}
-    .cta-pill{border:1px solid rgba(254,252,247,.12);border-radius:2px;font-size:.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(254,252,247,.4);padding:.5rem 1.1rem;}
-    .cta-note{margin-top:1.4rem;font-size:.72rem;color:rgba(254,252,247,.2);letter-spacing:.5px}
+    .cta-pill{border:1px solid rgba(201,169,110,.25);border-radius:2px;font-size:.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(201,169,110,.75);padding:.5rem 1.1rem;transition:border-color .2s,color .2s;}
+    .cta-pill:hover{border-color:var(--champ);color:var(--champ)}
+    .cta-note{margin-top:1.4rem;font-size:.72rem;color:rgba(254,252,247,.35);letter-spacing:.5px}
 
     /* FOOTER */
     footer{background:linear-gradient(180deg,#1a0e0c 0%,#150c0a 100%);border-top:1px solid rgba(201,169,110,.2);padding:3rem 2rem 2rem;text-align:center;position:relative;}
     footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,169,110,.5),rgba(255,245,200,.4),rgba(201,169,110,.5),transparent);}
     .foot-logo{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:400;color:var(--ivory);margin-bottom:.35rem;}
     .foot-logo span{color:var(--champ);font-style:italic}
-    .foot-tag{font-size:.62rem;letter-spacing:3px;text-transform:uppercase;color:rgba(254,252,247,.2);margin-bottom:1.8rem}
+    .foot-tag{font-size:.62rem;letter-spacing:3px;text-transform:uppercase;color:rgba(254,252,247,.6);margin-bottom:1.8rem}
     .foot-links{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 2rem;margin-bottom:1.4rem}
-    .foot-links a{font-size:.72rem;color:rgba(254,252,247,.3);text-decoration:none;letter-spacing:.5px;transition:color .2s}
+    .foot-links a{font-size:.72rem;color:rgba(254,252,247,.55);text-decoration:none;letter-spacing:.5px;transition:color .2s}
     .foot-links a:hover{color:var(--champ)}
-    .foot-copy{font-size:.68rem;color:rgba(254,252,247,.12);border-top:1px solid rgba(255,255,255,.04);padding-top:1.2rem;margin-top:.8rem}
+    .foot-copy{font-size:.68rem;color:rgba(254,252,247,.4);border-top:1px solid rgba(255,255,255,.1);padding-top:1.2rem;margin-top:.8rem}
 
     /* SKINCARE SECTION */
     .skincare{padding:7rem 0;background:var(--ivory);overflow:hidden}
@@ -342,39 +357,66 @@
 
     /* BONOS */
     .bonos{padding:7rem 0;background:linear-gradient(145deg,#1e1210 0%,#2a1a0c 35%,#241610 65%,#1e1210 100%);position:relative;overflow:hidden}
-    .bonos::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(201,169,110,.18) 0%,transparent 50%),radial-gradient(ellipse at 75% 20%,rgba(255,245,200,.08) 0%,transparent 40%);pointer-events:none}
+    .bonos::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(201,169,110,.22) 0%,transparent 50%),radial-gradient(ellipse at 75% 20%,rgba(255,245,200,.1) 0%,transparent 40%);pointer-events:none}
+    /* bonos section title gold shimmer override */
+    .bonos .s-title--lt{background:linear-gradient(90deg,var(--champ) 0%,#FFF8E7 30%,var(--gold-dk) 55%,#FFF8E7 75%,var(--champ) 100%);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:goldShimmer 5s linear infinite;}
+    .bonos .s-title--lt em{-webkit-text-fill-color:transparent}
     .bonos-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-top:3rem}
     @media(max-width:800px){.bonos-grid{grid-template-columns:1fr}}
     .bono-card{border-radius:16px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.3);transition:transform .3s}
     .bono-card:hover{transform:translateY(-4px)}
     .bono-card img{width:100%;height:auto;display:block}
 
-    /* HERO IMAGE - luxury morphing shape */
+    /* HERO IMAGE - medallion circle */
     .hero-img-wrap{position:relative;display:inline-block}
     .hero-logo-img{
-      width:min(300px,62vw);
-      height:min(360px,72vw);
+      width:min(320px,68vw);
+      height:min(320px,68vw);
       object-fit:cover;
-      border-radius:62% 38% 55% 45% / 48% 52% 48% 52%;
-      animation:heroMorph 14s ease-in-out infinite, fadeUp .9s .3s both;
-      filter:drop-shadow(0 20px 60px rgba(0,0,0,.45)) drop-shadow(0 4px 16px rgba(201,169,110,.25));
+      border-radius:50%;
+      background:#fff;
+      animation:medalFloat 6s ease-in-out infinite, fadeUp .9s .3s both;
+      box-shadow:
+        0 0 0 3px rgba(201,169,110,.6),
+        0 0 0 8px rgba(201,169,110,.12),
+        0 0 0 9px rgba(201,169,110,.25),
+        0 28px 80px rgba(0,0,0,.55),
+        0 8px 32px rgba(201,169,110,.2);
       display:block;
     }
-    @keyframes heroMorph{
-      0%,100%{border-radius:62% 38% 55% 45% / 48% 52% 48% 52%}
-      25%{border-radius:45% 55% 38% 62% / 55% 45% 55% 45%}
-      50%{border-radius:55% 45% 62% 38% / 38% 62% 45% 55%}
-      75%{border-radius:38% 62% 45% 55% / 62% 38% 52% 48%}
+    @keyframes medalFloat{
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-10px)}
     }
-    /* gold shimmer border around hero image */
+    /* outer gold glow ring */
     .hero-img-wrap::before{
-      content:'';position:absolute;inset:-3px;
-      border-radius:inherit;
-      background:linear-gradient(135deg,rgba(201,169,110,.6),rgba(255,245,200,.3) 30%,rgba(184,149,42,.1) 60%,rgba(201,169,110,.5));
+      content:'';position:absolute;
+      inset:-14px;
+      border-radius:50%;
+      background:conic-gradient(
+        rgba(201,169,110,.8) 0deg,
+        rgba(255,245,200,.4) 60deg,
+        rgba(184,149,42,.15) 120deg,
+        rgba(201,169,110,.7) 180deg,
+        rgba(255,245,200,.3) 240deg,
+        rgba(184,149,42,.1) 300deg,
+        rgba(201,169,110,.8) 360deg
+      );
       z-index:-1;
-      animation:heroMorph 14s ease-in-out infinite;
-      filter:blur(2px);
+      animation:goldSpin 12s linear infinite;
+      filter:blur(4px);
     }
+    /* inner gold ring */
+    .hero-img-wrap::after{
+      content:'';position:absolute;
+      inset:-4px;
+      border-radius:50%;
+      border:1px solid rgba(201,169,110,.5);
+      box-shadow:inset 0 0 20px rgba(201,169,110,.08), 0 0 20px rgba(201,169,110,.15);
+      z-index:1;
+      pointer-events:none;
+    }
+    @keyframes goldSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 
     /* PARALLAX DIVIDER */
     .parallax-divider{position:relative;height:45vh;min-height:320px;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center}
@@ -383,7 +425,7 @@
     .parallax-content{position:relative;z-index:1;padding:2rem}
     .parallax-content h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.8rem);font-weight:300;color:var(--ivory);line-height:1.2;margin-bottom:.8rem;text-shadow:0 2px 20px rgba(0,0,0,.5)}
     .parallax-content h2 em{font-style:italic;color:var(--champ)}
-    .parallax-content p{font-size:.95rem;color:rgba(254,252,247,.55);max-width:500px;margin:0 auto;line-height:1.7;text-shadow:0 1px 8px rgba(0,0,0,.4)}
+    .parallax-content p{font-size:.95rem;color:rgba(254,252,247,.75);max-width:500px;margin:0 auto;line-height:1.7;text-shadow:0 1px 8px rgba(0,0,0,.4)}
 
     /* ABOUT / MARI LEIVA */
     .about{padding:5rem 0;background:var(--cream);text-align:center}
@@ -411,7 +453,7 @@
 <div id="cursor-glow"></div>
 
 <nav id="nav">
-  <a href="#inicio" class="nav-logo"><img src="img/logo-header.png" alt="Logo Centro Cuídate"/>Centro <span>Cuídate</span></a>
+  <a href="#inicio" class="nav-logo"><img src="img/logo-circle.png" alt="Logo Centro Cuídate"/>Centro <span>Cuídate</span></a>
   <ul class="nav-menu" id="navMenu">
     <li><a href="#inicio">Inicio</a></li>
     <li><a href="#servicios">Servicios</a></li>
@@ -465,7 +507,7 @@
     <div style="position:relative;display:inline-block">
       <div class="hero-pill">C/Arquímedes, 32</div>
       <div class="hero-img-wrap">
-        <img src="img/logo-centro-cuidate.jpeg" alt="Centro Cuídate - Bienestar Integral en Coín Málaga" class="hero-logo-img"/>
+        <img src="img/logo-circle.png" alt="Centro Cuídate - Bienestar Integral en Coín Málaga" class="hero-logo-img"/>
       </div>
       <div class="hero-card">
         <span class="hero-card-label">Combo Belleza</span>
@@ -781,7 +823,7 @@
       <span class="s-label" style="color:var(--champ)">Ahorra con nuestros bonos</span>
       <h2 class="s-title s-title--lt">Bonos <em>exclusivos</em></h2>
       <div class="gold-rule gold-rule--c"></div>
-      <p style="margin-top:1rem;font-size:.88rem;color:rgba(254,252,247,.45);line-height:1.8">Bonos exclusivos para clientes con Programas de nutrición. Reconecta contigo.</p>
+      <p style="margin-top:1rem;font-size:.88rem;color:rgba(254,252,247,.7);line-height:1.8">Bonos exclusivos para clientes con Programas de nutrición. Reconecta contigo.</p>
     </div>
     <div class="bonos-grid">
       <div class="bono-card reveal-l">
